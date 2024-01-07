@@ -1,3 +1,8 @@
+# Reduce logging level to make sure the application works with SAM local
+logging:
+  level:
+    root: WARN
+
 api:
   url-pattern:
     # First placeholder represents date in format: yyyy-MM-dd, second is currencyFrom code, third is currencyTo code
