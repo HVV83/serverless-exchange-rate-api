@@ -1,1 +1,6 @@
-
+api:
+  url-pattern:
+    # First placeholder represents date in format: yyyy-MM-dd, second is currencyFrom code, third is currencyTo code
+    mastercard: https://www.mastercard.com/settlement/currencyrate/conversion-rate?fxDate=%s&transCurr=%s&crdhldBillCurr=%s&bankFee=0&transAmt=1
+    # First placeholder represents date in format: dd.MM.yyyy
+    privatbank: https://api.privatbank.ua/p24api/exchange_rates?json&date=%s
